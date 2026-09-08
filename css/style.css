@@ -1,0 +1,985 @@
+        /*general*/
+
+body{
+    background-color: rgba(27, 27, 27, 1);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+div{
+    padding: 0px;
+    margin: 0px;
+}
+p{
+    color:rgba(131, 131, 131, 1);
+}
+a{
+    text-decoration: none;
+    color:rgba(131, 131, 131, 1);
+}
+h1{
+    margin-top: 50px;
+    color:rgba(255, 255, 255, 1);
+    text-align: center;
+    font-size: 50px;
+}
+h4{
+    color:rgba(255, 255, 255, 1);
+    font-size: 32px;
+    margin: 0px;
+}
+.conteiner{
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+
+
+        /*first_screen*/
+
+
+
+.slogan{
+    margin: 25px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.first_screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav{
+    display: flex;
+    justify-content: center;    
+}
+nav > div{
+    margin: 5px;
+}
+.logo > img{
+    width: 270px;
+}
+.first_screen > p{
+    text-align: center;
+    padding-left: 350px;
+    padding-right: 350px;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+.first_screen > button{
+    width: 200px;
+    height: 50px;
+}
+header{
+    margin-top: 10px;
+}
+header_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header_top button{
+    width: 100px;
+    height: 50px;
+}
+nav div a:hover {
+    color: rgba(252, 115, 21, 1);
+}
+button {
+    background-color: rgba(252, 115, 21, 1);
+    color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(252, 115, 21, 1);
+    border-radius: 15px;
+    font-size: 17px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 45px;         
+    padding: 0 25px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgba(252, 115, 21, 0);
+    border: 3px solid rgba(252, 115, 21, 1);
+    transition: border 0.3s ease, background-color 0.3s ease;
+    color: rgba(252, 115, 21, 1);
+}
+.empty_button{
+    background-color: rgba(252, 115, 21, 0);
+}
+.empty_button:hover{
+    background-color: rgba(252, 115, 21, 0);
+    border: 3px solid rgba(252, 115, 21, 1);
+    transition: border 0.3s ease, background-color 0.3s ease;
+}
+.orange{
+    color:rgba(252, 115, 21, 1);
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.menu > div{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+.menu_element_text{
+    background-color: rgba(131, 131, 131, 0.25);
+    border-radius: 40px;
+    padding-top: 25%;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.menu_element_text > h4 {
+    flex: 1;
+    margin: 10px;
+    font-size: 24px;
+}
+.menu_element_dottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 0px 20px 0px 20px;
+}
+.menu > div > div:first-child {
+    z-index: 1;
+    margin-bottom: -25%;
+}
+.menu_element_text > p{
+    margin: 0px 40px 0px 40px;
+    padding: 10px 0px 10px 0px;
+    border-top: 1px solid rgba(131, 131, 131, 1);
+    border-bottom: 1px solid rgba(131, 131, 131, 1);
+}
+.menu_element_dottom > h4{
+    margin: 20px;
+}
+.menu_element_dottom > a {
+    font-size: 28px;
+    font-weight: bold;
+    color: rgba(252, 115, 21, 1);
+    width: 44px;
+    height: 44px;
+    background: rgba(252, 115, 21, 0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+        /*second_screen*/
+
+.second_screen {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.second_screen_back {
+    width: 100%;
+    height: 700px;
+    background-color: rgba(252, 115, 21, 1);
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+}
+
+.second_screen_back_img {
+    width: 450px;
+    height: 450px;
+    background: #fff;
+    border-radius: 50%;
+    margin-right: 10%;
+    z-index: 10;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.second_screen_back_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.second_screen_content {
+    padding-left: 50px;
+}
+
+.second_screen_content button{
+    margin-top: 100px;
+    height: 50px;
+    width: 200px;
+}
+
+.second_screen_point {
+    display: flex;
+    align-items: flex-start;
+}
+.second_screen_point_img{
+    margin-right: 20px;
+}
+.second_screen_point_img img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.dot {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1;
+}
+.dot.white { background-color: white; }
+.dot.black { background-color: black; }
+
+
+        /* third_screen */
+
+.third_screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.third_screen > h1 {
+    margin-bottom: 10px;
+}
+.third_screen > p{
+    width: 60%;
+    text-align: center;
+}
+
+.dishes-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 100px 50px;
+    background-color: #1a1a1a;
+    min-height: 800px;
+    align-items: flex-start;
+    align-self: flex-end;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.dish-card {
+    position: relative;
+    width: 260px;
+    height: 400px;
+    background-color: #333;
+    border-radius: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 50px;
+}
+.dish-image-layer img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+    object-fit: cover;
+}
+.action-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 60px;
+    height: 60px;
+    background-color: #fc7315;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: black;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.action-btn:hover {
+    background-color: #fff;
+    color: #fc7315;
+}
+.dish-info {
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+.dish-info h3 {
+    color: rgba(255,255,255,1);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin: 0 0 8px 0;
+    padding: 0 20px;
+}
+.dish-info .rating {
+    color: #ffb800;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 15px;
+}
+.third_screen_btn {
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+.dish-card-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+        /*fourth_screen*/
+
+.fourth_screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+}
+.fourth_screen > h1 {
+    margin-bottom: 10px;
+}
+.fourth_screen > p {
+    width: 60%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.filter-tabs {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.filter-btn {
+    background-color: rgba(131, 131, 131, 0.18);
+    border: 1px solid rgba(131, 131, 131, 0.35);
+    color: rgba(255, 255, 255, 0.7);
+    border-radius: 30px;
+    padding: 0 22px;
+    min-height: 42px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+.filter-btn:hover,
+.filter-btn.active-filter {
+    background-color: rgba(252, 115, 21, 1);
+    border-color: rgba(252, 115, 21, 1);
+    color: #fff;
+}
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    width: 100%;
+}
+.food-item {
+    background-color: rgba(51, 51, 51, 0.6);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.food-item-img {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+.food-item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.food-item-info {
+    padding: 20px 22px 22px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.food-item-info h3 {
+    color: #fff;
+    font-size: 18px;
+    margin: 0 0 6px 0;
+    font-weight: 700;
+}
+.food-stars {
+    color: #ffb800;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.food-item-info p {
+    font-size: 14px;
+    line-height: 1.5;
+    flex: 1;
+    margin: 0 0 16px 0;
+}
+.food-item-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.food-price {
+    color: rgba(252, 115, 21, 1);
+    font-size: 22px;
+    font-weight: 700;
+}
+.add-btn {
+    font-size: 14px;
+    padding: 0 16px;
+    min-height: 38px;
+    border-radius: 10px;
+}
+
+        /*fifth_screen*/
+
+.fifth_screen {
+    background-color: rgba(20, 20, 20, 1);
+    padding: 20px 0 80px;
+    margin-top: 60px;
+}
+.fifth_screen h1 {
+    margin-bottom: 12px;
+}
+.fifth_screen_subtitle {
+    text-align: center;
+    width: 55%;
+    margin: 0 auto 60px;
+    display: block;
+}
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.why-item {
+    background-color: rgba(51, 51, 51, 0.5);
+    border-radius: 20px;
+    padding: 32px 24px;
+    text-align: center;
+}
+.why-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.why-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: invert(1);
+}
+.why-item h4 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+.why-item p {
+    font-size: 14px;
+    line-height: 1.55;
+    margin: 0;
+}
+
+        /*sixth_screen*/
+
+.sixth_screen {
+    margin-top: 60px;
+    padding-bottom: 60px;
+}
+.sixth_screen_orange_bg {
+    background-color: rgba(252, 115, 21, 0.12);
+    border-top: 2px solid rgba(252, 115, 21, 0.3);
+    border-bottom: 2px solid rgba(252, 115, 21, 0.3);
+    padding: 10px 0 60px;
+}
+.reviews_title {
+    color: #fff;
+}
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 40px;
+}
+.review-card {
+    background-color: rgba(40, 40, 40, 0.9);
+    border-radius: 20px;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+.review-img {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+.review-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.review-stars {
+    color: #ffb800;
+    font-size: 20px;
+    padding: 18px 24px 8px;
+}
+.review-text {
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 0 24px;
+    margin: 0;
+}
+
+
+        /*seventh_screen*/
+
+.newsletter_section {
+    padding: 70px 0;
+    text-align: center;
+    border-top: 1px solid rgba(131, 131, 131, 0.2);
+    margin-top: 60px;
+}
+.newsletter_pre {
+    color: rgba(252, 115, 21, 1);
+    font-size: 15px;
+    margin: 0 0 12px;
+}
+.newsletter_heading {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0 auto 36px;
+    max-width: 500px;
+    line-height: 1.45;
+}
+.newsletter_form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.newsletter_input {
+    background-color: rgba(51, 51, 51, 0.8);
+    border: 1px solid rgba(131, 131, 131, 0.4);
+    border-radius: 12px;
+    color: #fff;
+    font-size: 16px;
+    padding: 0 22px;
+    height: 50px;
+    width: 340px;
+    outline: none;
+    transition: border-color 0.25s;
+}
+.newsletter_input::placeholder {
+    color: rgba(131, 131, 131, 0.7);
+}
+.newsletter_input:focus {
+    border-color: rgba(252, 115, 21, 0.8);
+}
+.newsletter_btn {
+    height: 50px;
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+        /*footer*/
+
+footer {
+    background-color: rgba(15, 15, 15, 1);
+    padding: 50px 0 20px;
+    margin-top: 0;
+}
+.footer_top {
+    display: flex;
+    gap: 60px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(131, 131, 131, 0.2);
+}
+.footer_brand {
+    flex: 0 0 280px;
+}
+.footer_logo img {
+    width: 180px;
+    margin-bottom: 16px;
+}
+.footer_brand p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+.footer_links {
+    display: flex;
+    gap: 50px;
+    flex: 1;
+    justify-content: flex-end;
+}
+.footer_col h5 {
+    color: #fff;
+    font-size: 16px;
+    margin: 0 0 16px;
+    font-weight: 700;
+}
+.footer_col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer_col ul li {
+    margin-bottom: 10px;
+}
+.footer_col ul li a {
+    font-size: 14px;
+    transition: color 0.2s;
+}
+.footer_col ul li a:hover {
+    color: rgba(252, 115, 21, 1);
+}
+.footer_bottom {
+    padding-top: 24px;
+    text-align: center;
+}
+.footer_bottom p {
+    font-size: 13px;
+    margin: 0;
+}
+
+
+        /* ============================================== */
+        /* @media                                        */
+        /* ============================================== */
+
+@media (max-width: 1260px) {
+    .conteiner {
+        width: 96%;
+    }
+}
+
+@media (max-width: 900px) {
+    .food-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+    .footer_top {
+        flex-direction: column;
+    }
+    .footer_links {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .food-grid {
+        grid-template-columns: 1fr;
+    }
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+    .dishes-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+    }
+    .newsletter_input {
+        width: 90%;
+    }
+}
+
+
+        /* ============================================== */
+        /* АДАПТИВ ДЛЯ 1-3 ЕКРАНІВ — до 768px           */
+        /* ============================================== */
+
+@media (max-width: 768px) {
+    .conteiner {
+        width: 100%;
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
+
+    /* --- HEADER --- */
+    header_top {
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+    }
+    .logo > img {
+        width: 180px;
+    }
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px;
+    }
+    nav > div {
+        margin: 4px 6px;
+    }
+    header_top button {
+        width: auto;
+        padding: 0 16px;
+        min-height: 40px;
+        font-size: 15px;
+    }
+
+    /* --- FIRST SCREEN --- */
+    h1 {
+        font-size: 32px;
+        margin-top: 30px;
+    }
+    .slogan {
+        margin: 16px 0;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        font-size: 28px;
+    }
+    .first_screen > p {
+        padding-left: 16px;
+        padding-right: 16px;
+        font-size: 15px;
+    }
+
+    /* --- MENU (картки салатів) --- */
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .menu > div {
+        flex: 0 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+        padding: 8px;
+    }
+
+    /* --- SECOND SCREEN --- */
+    .second_screen {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+    .second_screen_back {
+        width: 100%;
+        height: auto;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-radius: 0 0 50% 50%;
+        padding: 40px 0 60px;
+        justify-content: center;
+    }
+    .second_screen_back_img {
+        width: 260px;
+        height: 260px;
+        margin-right: 0;
+    }
+    .second_screen_content {
+        padding: 30px 16px;
+        text-align: center;
+    }
+    .second_screen_content h1 {
+        margin-top: 0;
+    }
+    .second_screen_point {
+        justify-content: flex-start;
+        text-align: left;
+    }
+    .second_screen_content button {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    /* --- THIRD SCREEN --- */
+    .third_screen > h1 {
+        font-size: 28px;
+        padding: 0 16px;
+    }
+    .third_screen > p {
+        width: 90%;
+        font-size: 14px;
+    }
+    .dishes-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        min-height: unset;
+        padding: 40px 16px;
+        gap: 24px;
+    }
+    .dish-card {
+        width: 220px;
+        height: 340px;
+    }
+    .dish-image-layer img {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+
+        /* ============================================== */
+        /* АДАПТИВ ДЛЯ 1-3 ЕКРАНІВ — до 420px           */
+        /* ============================================== */
+
+@media (max-width: 420px) {
+    /* --- HEADER --- */
+    header {
+        margin-top: 6px;
+    }
+    .logo > img {
+        width: 140px;
+    }
+    nav > div a {
+        font-size: 13px;
+    }
+    header_top button {
+        font-size: 13px;
+        padding: 0 12px;
+        min-height: 36px;
+    }
+
+    /* --- FIRST SCREEN --- */
+    h1 {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+    .slogan {
+        font-size: 22px;
+        line-height: 1.35;
+        margin: 12px 0;
+    }
+    .first_screen > p {
+        font-size: 13px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .first_screen > button {
+        width: 100%;
+        max-width: 340px;
+        font-size: 15px;
+    }
+
+    /* --- MENU --- */
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu > div {
+        flex: unset;
+        max-width: 320px;
+        width: 100%;
+    }
+    .menu_element_text > h4 {
+        font-size: 18px;
+    }
+    .menu_element_text > p {
+        font-size: 13px;
+        margin: 0 20px;
+    }
+    .menu_element_dottom > h4 {
+        font-size: 20px;
+    }
+    .menu > div > div:first-child img {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* --- SECOND SCREEN --- */
+    .second_screen {
+        margin-top: 40px;
+    }
+    .second_screen_back {
+        border-radius: 0 0 40% 40%;
+        padding: 30px 0 50px;
+    }
+    .second_screen_back_img {
+        width: 200px;
+        height: 200px;
+    }
+    .second_screen_content {
+        padding: 24px 12px;
+    }
+    .second_screen_content h1 {
+        font-size: 26px;
+    }
+    .second_screen_content p {
+        font-size: 13px;
+    }
+    .second_screen_point_img img {
+        width: 44px;
+        height: 44px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+
+    /* --- THIRD SCREEN --- */
+    .third_screen > h1 {
+        font-size: 20px;
+    }
+    .third_screen > p {
+        width: 95%;
+        font-size: 13px;
+    }
+    .dishes-container {
+        padding: 24px 10px;
+        gap: 16px;
+    }
+    .dish-card {
+        width: 160px;
+        height: 280px;
+        border-radius: 80px;
+    }
+    .dish-image-layer img {
+        width: 160px;
+        height: 160px;
+        margin-bottom: 20px;
+    }
+    .action-btn {
+        width: 42px;
+        height: 42px;
+        font-size: 16px;
+        top: 10px;
+        right: 10px;
+    }
+    .dish-info h3 {
+        font-size: 11px;
+    }
+    .dish-info .rating {
+        font-size: 12px;
+    }
+}
