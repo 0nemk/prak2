@@ -73,14 +73,15 @@ nav > div{
 }
 header{
     margin-top: 10px;
+    
+}
+header.fixed {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-}
-header.fixed {
-    
+    margin-top: 0;
 }
 header_top{
     display: flex;

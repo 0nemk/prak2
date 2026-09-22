@@ -1,18 +1,14 @@
 $(function(){
-let top=$(".header");
-let topH=top.height();
-let header=$(".header");
-let scrollPos=$(window).scrollTop();
+            let header = $("#header");
+            let headerH = header.outerHeight();
 
-$(window).on("scroll",function(){
-scrollPos=$(window).scrollTop();
-console.log(scrollPos);
-if (scrollPos>topH){
-header.addClass("fixed");
-}
-else{
-header.removeClass("fixed");
-}
-});
-console.log(topH);
-});
+            $(window).on("scroll", function(){
+                let scrollPos = $(window).scrollTop();
+
+                if (scrollPos > headerH) {
+                    header.addClass("fixed");
+                } else {
+                    header.removeClass("fixed");
+                }
+            });
+        });

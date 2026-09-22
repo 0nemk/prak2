@@ -506,6 +506,24 @@
                 btn.classList.add('active-filter');
             });
         });
+        
+
+
+
+        $(function(){
+            let header = $("#header");
+            let headerH = header.outerHeight();
+
+            $(window).on("scroll", function(){
+                let scrollPos = $(window).scrollTop();
+
+                if (scrollPos > headerH) {
+                    header.addClass("fixed");
+                } else {
+                    header.removeClass("fixed");
+                }
+            });
+        });
     </script>
 </body>
 </html>
